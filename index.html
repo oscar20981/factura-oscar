@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Invoice</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="invoice-box">
+        <div class="header">
+            <div class="header-top">
+                <span class="brand">
+                    <img src="b93945bc-3aa1-41a0-91cf-9b5f9983425c.png" alt="Logo" style="height:32px;vertical-align:middle;">
+                    Brand Name
+                </span>
+                <span class="invoice-title">INVOICE</span>
+            </div>
+            <div class="red-line"></div>
+            <div class="header-bottom">
+                <div class="info">
+                    <strong>Invoice to:</strong> Dwayne Clark<br>
+                    24 Dummy Street Area,<br>
+                    Location, State, Country<br>
+                    000000
+                </div>
+                <div class="details">
+                    Invoice#: <strong>52168</strong><br>
+                    Date: <strong>01 / 02 / 2020</strong>
+                </div>
+            </div>
+        </div>
+        <div class="table-section">
+            <table>
+                <tr>
+                    <th>SL.</th>
+                    <th>Item Description</th>
+                    <th>Price</th>
+                    <th>Qty.</th>
+                    <th>Total</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Lorem Ipsum Dolor</td>
+                    <td>$50.00</td>
+                    <td>1</td>
+                    <td>$50.00</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Pellentesque id neque ligula</td>
+                    <td>$20.00</td>
+                    <td>3</td>
+                    <td>$60.00</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Interdum et malesuada fames</td>
+                    <td>$10.00</td>
+                    <td>2</td>
+                    <td>$20.00</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Vivamus volutpat faucibus</td>
+                    <td>$90.00</td>
+                    <td>1</td>
+                    <td>$90.00</td>
+                </tr>
+            </table>
+        </div>
+        <div class="totals-section">
+            <div></div>
+            <table class="totals-table">
+                <tr>
+                    <td>Sub Total:</td>
+                    <td>$220.00</td>
+                </tr>
+                <tr>
+                    <td>Tax:</td>
+                    <td>0.00%</td>
+                </tr>
+                <tr>
+                    <th>Total:</th>
+                    <th>$220.00</th>
+                </tr>
+            </table>
+        </div>
+        <div class="footer-section">
+            <div class="footer-left">
+                <strong>Thank you for your business</strong><br>
+                <br>
+                <strong>Payment Info:</strong><br>
+                Account #: 1526 5896 9632<br>
+                A/C Name: Dwayne Clark<br>
+                Bank Details: Add your details
+            </div>
+            <div>
+                <!-- Espacio para totales ya está arriba -->
+            </div>
+        </div>
+            ___________________________<br>
+        <div class="terms-section">
+            <strong>Terms & Conditions</strong><br>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam euismod, velit vel sollicitudin eleifend, erat urna cursus enim, at dictum sem enim eu sapien.
+        </div>
+        <div class="sign-section">
+            ___________________________<br>
+            Authorised Sign
+        </div>
+        <div style="border-bottom: 20px solid #22262a; width: 100%; ;"></div>
+    </div>
+</body>
+</html>
+<style>
+        body {
+            background: #f3f3f3;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 40px 0;
+        }
+        .invoice-box {
+            max-width: 500px;
+            margin: auto;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+            overflow: hidden;
+        }
+        .header {
+            background: #22262a;
+            color: #fff;
+            padding: 24px 32px 0 32px;
+        }
+        .header-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .brand {
+            font-size: 1.2em;
+            font-weight: bold;
+            letter-spacing: 1px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .invoice-title {
+            color: #EF3E5D;
+            font-size: 1.5em;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+        .red-line {
+            border-bottom: 4px solid #EF3E5D;
+            width: 100%;
+            margin: 18px 0 0 0;
+        }
+        .header-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 18px 0 18px 0;
+        }
+        .info {
+            font-size: 0.95em;
+            line-height: 1.5;
+        }
+        .details {
+            text-align: right;
+            font-size: 0.95em;
+            line-height: 1.5;
+        }
+        .table-section {
+            padding: 0 0 0 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0;
+            font-size: 0.97em;
+        }
+        th, td {
+            padding: 10px 8px;
+            text-align: left;
+        }
+        th {
+            background: #f7f7f7;
+            font-weight: bold;
+        }
+        tr:not(:last-child) td {
+            border-bottom: 1px solid #eee;
+        }
+        .totals-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 16px 32px 0 32px;
+            font-size: 1em;
+        }
+        .totals-table {
+            width: 180px;
+        }
+        .footer-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 16px 32px 8px 32px;
+            font-size: 0.95em;
+        }
+        .footer-left {
+            max-width: 60%;
+        }
+        .terms-section {
+            padding: 0 32px 16px 32px;
+            font-size: 0.9em;
+            color: #555;
+        }
+        .sign-section {
+            text-align: right;
+            padding: 16px 32px 24px 32px;
+            font-size: 0.95em;
+        }
+        @media(max-width: 350px) {
+            .invoice-title {
+                font-size: 1.2em; /* Tamaño más pequeño en pantallas pequeñas */}
+                .brand {
+                font-size: 0.8em; /* Tamaño más pequeño en pantallas pequeñas */}
+                .info, .details {
+                font-size: 0.8em; /* Tamaño más pequeño en pantallas pequeñas*/
+            }
+            .table-section table {
+                font-size: 0.8em; /* Tamaño más pequeño en pantallas pequeñas */
+            }
+        }
+    </style>
